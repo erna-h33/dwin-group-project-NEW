@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Branch Updated";
+  src: url(fonts/Branch\ Updated.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "GT America";
+  src: url(fonts/GT-America-Extended-Light.otf) format("opentype"),
+    url(fonts/GT-America-Extended-Light.ttf) format("truetype");
+}
+
+:root {
+  --primary-gold: #E6BE8A;
+  --secondary-gold: #D2B48C;
+  --light-gold: #F7E7CE;
+  --gold-text: #A8967D;
+  --dark-blue: #4A4E69;
+  --lighter-blue: #F0F0F5;
+  --transparent: rgba(0, 0, 0, 0);
+}
+
+/* Admin Properties List */
+.admin-properties-list {
+  padding: 2rem;
+  background-color: var(--lighter-blue);
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+}
+
+.admin-properties-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-properties-list ul li {
+  margin-bottom: 1rem;
+}
+
+.admin-properties-list ul li a {
+  display: block;
+  color: var(--dark-blue);
+  font-size: 1rem;
+  text-decoration: underline;
+  border-radius: 0.3125rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.admin-properties-list ul li a:active {
+  background-color: var(--secondary-gold);
+}

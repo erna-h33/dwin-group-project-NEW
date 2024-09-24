@@ -1,0 +1,213 @@
+:root {
+  --primary-gold: #E6BE8A;
+  --secondary-gold: #D2B48C;
+  --light-gold: #F7E7CE;
+  --gold-text: #A8967D;
+  --dark-blue: #4A4E69;
+  --lighter-blue: #F0F0F5;
+  --transparent: rgba(0, 0, 0, 0);
+}
+
+/* HOME Hero Section */
+.hero {
+  height: 100vh;
+  background: url('../images/home-hero.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-gold);
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h2 {
+  font-size: 6rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  /* 24px */
+  margin-bottom: 1.25rem;
+  /* 20px */
+}
+
+.hero-button {
+  margin-top: 0.675rem;
+}
+
+/* DASHBOARD STYLES */
+.cust_dashboard_boxes {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 1.25rem;
+  /* 20px */
+  justify-content: space-between;
+}
+
+.cust_dashboard_box {
+  height: 400px;
+  padding: 2.5rem;
+  margin: 0.625rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 calc(30% - 1.25rem);
+  box-sizing: border-box;
+  color: white;
+  position: relative;
+}
+
+.cust_dashboard_box:nth-child(1) {
+  background: url('../images/home-hero.jpg') no-repeat center center/cover;
+}
+
+.cust_dashboard_box:nth-child(2) {
+  background: url('../images/customer-view-profile.jpg') no-repeat center center/cover;
+}
+
+.cust_dashboard_box:nth-child(3) {
+  background: url('../images/customer-view-property.jpg') no-repeat center center/cover;
+}
+
+.cust_dashboard_box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  z-index: 1;
+}
+
+.cust_dashboard_box a {
+  position: relative;
+  z-index: 2;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cust_dashboard_box:hover {
+  transform: translateY(-0.625rem) scale(1.05);
+  box-shadow: 0 0.9375rem 1.25rem rgba(0, 0, 0, 0.2);
+}
+
+/* ABOUT US TEAM section */
+.team-section {
+  padding: 3rem 1rem;
+  background-color: var(--lighter-blue);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.team-member {
+  flex: 1 1 calc(20% - 1.25rem);
+  /* 5 members per row, responsive */
+  background-color: var(--dark-blue);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.team-member h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--light-gold);
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: var(--light-gold);
+}
+
+.team-member:hover {
+  transform: translateY(-0.625rem) scale(1.05);
+  box-shadow: 0 0.9375rem 1.25rem rgba(0, 0, 0, 0.2);
+}
+
+/* PROPERTY LIST STYLES */
+.property-hero {
+  width: 100%;
+  height: 50vh;
+  margin-bottom: 40px;
+  background: url('../images/property-hero.jpg') no-repeat center center/cover;
+}
+
+
+
+/* Action links */
+.property-table td a {
+  color: var(--primary-gold);
+  /* Use gold color for links */
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: var(--dark-blue);
+  /* Use dark blue for background */
+  color: white;
+}
+
+.property-table td a:hover {
+  background-color: var(--secondary-gold);
+  /* Darker gold on hover */
+}
+
+/* CONTACT PAGE */
+.contact-hero {
+  width: 100%;
+  height: 70vh;
+  margin-bottom: 40px;
+  background: url('../images/contact-us-hero.jpg') no-repeat center center/cover;
+}
+
+/* PROFILE PAGES */
+
+/* CUSTOMER PROFILE */
